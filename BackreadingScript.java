@@ -44,7 +44,7 @@ public class BackreadingScript {
             int halfStudents = students.size() / 2;
 
             int start = FRONT_HALF ? 0 : students.size() - halfStudents,
-                end = FRONT_HALF ? halfStudents : students.size();
+                end = start + halfStudents;
 
             int i = 0;
             for (Student s : students) {
